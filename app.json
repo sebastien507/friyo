@@ -8,13 +8,13 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.friyo.app",
+      "bundleIdentifier": "com.sebastienbire.friyo",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
-      "package": "com.friyo.app"
+      "package": "com.sebastienbire.friyo"
     },
     "plugins": [
       "expo-router",
