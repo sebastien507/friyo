@@ -1,0 +1,261 @@
+{
+  "splash": {
+    "tagline1": "Votre menu de la semaine",
+    "tagline2": "En 30 secondes"
+  },
+  "common": {
+    "next": "Suivant",
+    "back": "Retour",
+    "skip": "Passer",
+    "cancel": "Annuler",
+    "add": "Ajouter",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "done": "Terminé",
+    "loading": "Un instant...",
+    "error": "Oups, quelque chose a planté. Réessaie !",
+    "minutes": "{{count}} min"
+  },
+  "days": {
+    "short": ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
+    "long": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+  },
+  "onboarding": {
+    "household": {
+      "title": "Qui mange à la maison ?",
+      "adults": "Adultes",
+      "children": "Enfants"
+    },
+    "meals": {
+      "title": "Combien de soupers veux-tu planifier chaque semaine ?",
+      "subtitle": "Tu peux toujours en ajouter ou en enlever plus tard"
+    },
+    "preferences": {
+      "title": "Des restrictions alimentaires ?",
+      "subtitle": "Choisis-en jusqu'à 3 (optionnel)",
+      "options": {
+        "vegetarian": "🥦 Végétarien",
+        "flexitarian": "🌿 Flexitarien",
+        "pescatarian": "🐟 Pescétarien",
+        "vegan": "🌱 Végétalien",
+        "gluten_free": "🌾 Sans gluten",
+        "lactose_free": "🥛 Sans lactose"
+      }
+    },
+    "favorites": {
+      "title": "Quels soupers votre famille aime déjà ?",
+      "subtitle": "L'IA va s'en inspirer pour vos suggestions",
+      "placeholder": "Ex. : poulet rôti, pâtes bolognaise, tacos de bœuf, soupe aux légumes..."
+    },
+    "cuisine": {
+      "title": "Quel style de cuisine vous inspire ?",
+      "subtitle": "Choisis-en jusqu'à 3 (optionnel)"
+    },
+    "chefs": {
+      "title": "Tu t'inspires de certains chefs ?",
+      "subtitle": "Les recettes adopteront leur style et leurs techniques (optionnel)",
+      "hint": "Sélectionne un ou plusieurs chefs, ou laisse vide pour un style générique.",
+      "generic": "✓ Aucun chef sélectionné — génération générique"
+    },
+    "reminders": {
+      "title": "Quand fais-tu ton épicerie ?",
+      "subtitle": "On va t'envoyer le rappel frigo la veille, au bon moment",
+      "timeLabel": "Heure du rappel",
+      "context": "On te rappellera le {{day}} à {{time}} de vérifier ton frigo avant de générer ton menu."
+    },
+    "finish": "C'est parti !"
+  },
+  "chefStyles": {
+    "ottolenghi": "🫙 Ottolenghi",
+    "ricardo": "🍁 Ricardo",
+    "jamie_oliver": "🫒 Jamie Oliver",
+    "ina_garten": "🥂 Ina Garten",
+    "jennifer_segal": "👩‍🍳 Once Upon a Chef",
+    "kathryne_taylor": "🥗 Cookie and Kate"
+  },
+  "cuisineStyles": {
+    "quebecois": "🍁 Québécois traditionnel",
+    "italian": "🍝 Italien",
+    "mexican": "🌮 Mexicain",
+    "asian": "🍜 Asiatique",
+    "mediterranean": "🥘 Méditerranéen",
+    "maghrebin": "🌙 Maghrébin",
+    "comfort": "🍔 Comfort food nord-américain",
+    "light_healthy": "🥗 Cuisine légère & santé",
+    "bbq": "🔥 BBQ & grillades",
+    "stews_soups": "🫕 Mijotés & soupes"
+  },
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "list": "Liste",
+    "profile": "Profil"
+  },
+  "home": {
+    "weekOf": "Semaine du {{date}}",
+    "regenerateAll": "Régénérer tout",
+    "addMeal": "+ Ajouter un souper",
+    "grocerySection": "Liste d'épicerie",
+    "addItem": "+ Ajouter un item",
+    "share": "Partager",
+    "generating": "On prépare ton menu...",
+    "emptyTitle": "Pas encore de menu cette semaine",
+    "emptyCta": "Générer mon menu",
+    "menuReady": "On a préparé ton menu 🍽️"
+  },
+  "meal": {
+    "ingredients": "Ingrédients principaux",
+    "steps": "Étapes",
+    "regenerateThis": "Régénérer ce souper",
+    "regenBtn": "Régénérer",
+    "removeBtn": "Supprimer",
+    "regenerating": "Recette en régénération...",
+    "generatingImage": "Génération de l'image...",
+    "viewFull": "Voir la recette complète",
+    "servings": "{{count}} portions",
+    "prepTime": "Temps de préparation",
+    "personalNote": "Note personnelle",
+    "notePlaceholder": "Ex. : doubler la sauce, les enfants adorent...",
+    "addTitle": "Ajouter un souper manuellement",
+    "namePlaceholder": "Nom du plat (ex. Spaghetti maison)",
+    "ingredientsPlaceholder": "Ingrédients principaux (optionnel, pour la liste d'épicerie)",
+    "dayLabel": "Quel jour ?",
+    "addButton": "Ajouter",
+    "ingredientSection": "Ingrédients (ajoutés à l'épicerie)",
+    "ingredientNamePlaceholder": "Ingrédient (ex. saumon)",
+    "ingredientQtyPlaceholder": "Qté (ex. 300g)"
+  },
+  "grocery": {
+    "categories": {
+      "produce": "🥦 Fruits & légumes",
+      "meat_fish": "🥩 Viandes & poissons",
+      "dairy": "🧀 Produits laitiers",
+      "bakery": "🥖 Boulangerie",
+      "pantry": "🥫 Épicerie sèche",
+      "frozen": "🧊 Surgelés",
+      "other": "🛒 Autre",
+      "staples": "📦 Produits de base"
+    },
+    "addItemTitle": "Ajouter un item",
+    "itemNamePlaceholder": "Nom de l'item (ex. Ketchup)",
+    "itemQtyPlaceholder": "Quantité (ex. 1 bouteille) — optionnel",
+    "categoryLabel": "Catégorie",
+    "addToList": "Ajouter à la liste",
+    "shareHeader": "🛒 Liste d'épicerie — Semaine du {{date}}"
+  },
+  "fridge": {
+    "title": "Qu'est-ce qu'on a dans le frigidaire ? 🧊",
+    "ctaButton": "Vérifier mon frigo",
+    "placeholder": "Décris ce que t'as dans le frigo (ex. : du poulet, des carottes, des œufs, du fromage...)",
+    "generate": "Générer mon menu avec ça",
+    "skip": "Générer sans le frigo"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "household": "Composition du foyer",
+    "mealsPerWeek": "Soupers par semaine",
+    "preferences": "Préférences alimentaires",
+    "favoriteDishes": "Recettes favorites",
+    "cuisineStyles": "Styles de cuisine",
+    "chefStyles": "Style de chefs",
+    "groceryDay": "Jour d'épicerie",
+    "reminderTime": "Heure du rappel",
+    "staples": "Produits de base récurrents",
+    "staplesHint": "Quels produits achètes-tu chaque semaine ?",
+    "stapleFrequency": {
+      "1": "Chaque semaine",
+      "2": "Aux 2 semaines",
+      "4": "Une fois par mois"
+    },
+    "unitSystem": "Unités de mesure",
+    "unitMetric": "Métrique (g, ml, kg)",
+    "unitImperial": "Impérial (oz, lbs, tasses)",
+    "simpleQuick": "Recettes simples et rapides",
+    "simpleQuickDesc": "Des soupers prêts en 30 min ou moins, avec peu d'ingrédients.",
+    "appearance": "Apparence",
+    "themeDark": "Sombre",
+    "themeLight": "Clair",
+    "language": "Langue",
+    "notifications": "Notifications",
+    "notifFridge": "Question frigo",
+    "notifMenuReady": "Menu prêt",
+    "notifListReminder": "Rappel liste d'épicerie",
+    "notifSeason": "Changement de saison",
+    "linkAccount": "Lier un compte email",
+    "linkAccountHint": "Pour retrouver tes données si tu changes de téléphone",
+    "deleteAccount": "Supprimer mon compte et mes données",
+    "deleteConfirmTitle": "Tout supprimer ?",
+    "deleteConfirmBody": "Ton compte et toutes tes données seront supprimés définitivement. Cette action est irréversible.",
+    "emailPlaceholder": "ton@courriel.ca",
+    "sendMagicLink": "Envoyer le lien de connexion"
+  },
+  "tier": {
+    "trialActive": "Essai Pro — {{days}} jours restants",
+    "trialUpgrade": "Passer à Pro",
+    "proActive": "Friyo Pro ✓",
+    "managePlan": "Gérer mon plan",
+    "freeUpgradeTitle": "Débloquer Friyo Pro",
+    "freeUpgradeSubtitle": "Menus jusqu'à 7 soupers, tous les styles de cuisine et plus.",
+    "morePrefs": "autres préférences disponibles avec Pro",
+    "cuisineLocked": "Styles de cuisine disponibles avec Friyo Pro",
+    "unlock": "Passer à Pro"
+  },
+  "paywall": {
+    "planTitle": "Choisissez votre plan",
+    "planFree": "De base",
+    "planFreePrice": "Gratuit",
+    "planPro": "Pro",
+    "planProBadge": "Meilleur",
+    "freeIncluded": [
+      "3 soupers par semaine",
+      "Restrictions sans gluten & sans lactose"
+    ],
+    "freeLocked": [
+      "Plus de 3 soupers par semaine",
+      "Toutes les préférences alimentaires",
+      "Tous les styles de cuisine",
+      "Personnalisation IA avancée",
+      "Historique illimité"
+    ],
+    "proFeatures": [
+      "Jusqu'à 7 soupers par semaine",
+      "Toutes les préférences alimentaires",
+      "Tous les styles de cuisine",
+      "Personnalisation IA avancée",
+      "Historique illimité"
+    ],
+    "yearly": "Annuel",
+    "yearlyPrice": "39,99 $/an",
+    "yearlySave": "Économise 33 %",
+    "monthly": "Mensuel",
+    "monthlyPrice": "4,99 $/mois",
+    "ctaFree": "Continuer gratuitement",
+    "ctaPro": "Passer à Pro",
+    "restore": "Restaurer mon abonnement"
+  },
+  "season": {
+    "title": "C'est le début de {{season}} {{emoji}}",
+    "subtitle": "Veux-tu ajuster tes styles de cuisine pour la saison ?",
+    "update": "Mettre à jour",
+    "keep": "Garder les mêmes",
+    "suggested": "Suggestions de saison",
+    "names": {
+      "spring": "le printemps",
+      "summer": "l'été",
+      "fall": "l'automne",
+      "winter": "l'hiver"
+    },
+    "emojis": {
+      "spring": "🌱",
+      "summer": "☀️",
+      "fall": "🍂",
+      "winter": "❄️"
+    }
+  },
+  "notifications": {
+    "fridgeTitle": "Qu'est-ce qu'on a dans le frigidaire ? 🧊",
+    "fridgeBody": "Dis-nous ce que t'as et on va faire ton menu avec ça.",
+    "menuReadyTitle": "Ton menu de la semaine est prêt 🍽️",
+    "listReminderBody": "T'as un menu planifié mais pas encore fait ta liste 🛒"
+  }
+}
