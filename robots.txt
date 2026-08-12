@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://friyo.app/sitemap.xml
