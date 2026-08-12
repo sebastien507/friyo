@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"friyo","applicationCategory":"LifestyleApplication","operatingSystem":"iOS, Android","description":"Application de planification de repas qui génère un menu hebdomadaire et une liste d'épicerie personnalisée.","offers":[{"@type":"Offer","price":"0","priceCurrency":"CAD","description":"Version gratuite"},{"@type":"Offer","price":"4.99","priceCurrency":"CAD","billingPeriod":"P1M","description":"friyo Pro mensuel"},{"@type":"Offer","price":"39.99","priceCurrency":"CAD","billingPeriod":"P1Y","description":"friyo Pro annuel"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"friyo","url":"https://friyo.app","contactPoint":{"@type":"ContactPoint","email":"info@friyo.app","contactType":"customer support"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Est-ce que friyo est gratuit?","acceptedAnswer":{"@type":"Answer","text":"Oui. friyo est gratuit pour 3 menus par semaine. La version Pro à 4,99$/mois débloque les menus illimités, les recettes maison et les items récurrents. À l'ouverture, 14 jours de Pro gratuit pour tous, sans carte."}},{"@type":"Question","name":"Comment friyo apprend mes goûts?","acceptedAnswer":{"@type":"Answer","text":"Chaque fois que tu laisses une recette dans ton menu sans la retirer, friyo s'en souvient et la réintroduit plus souvent. Les suggestions s'améliorent chaque semaine."}},{"@type":"Question","name":"Puis-je ajouter mes propres recettes?","acceptedAnswer":{"@type":"Answer","text":"Oui, avec friyo Pro. Tu entres ta recette et ses ingrédients une fois — friyo les mémorise et les ajoute automatiquement à ta liste d'épicerie à chaque fois."}},{"@type":"Question","name":"Est-ce que ça fonctionne avec des restrictions alimentaires?","acceptedAnswer":{"@type":"Answer","text":"Oui. Tu configures tes préférences une fois et friyo les applique à chaque menu généré."}},{"@type":"Question","name":"C'est quoi Vérifier mon frigo?","acceptedAnswer":{"@type":"Answer","text":"Tu indiques à friyo ce que tu as déjà dans ton frigo, et il bâtit ton menu à partir de ces ingrédients en priorité pour éviter le gaspillage."}},{"@type":"Question","name":"Quand est-ce que l'app sera disponible?","acceptedAnswer":{"@type":"Answer","text":"friyo est en version bêta. Inscris-toi à la liste d'attente pour être parmi les premiers à y avoir accès."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Est-ce que friyo est gratuit?","acceptedAnswer":{"@type":"Answer","text":"Oui. friyo est gratuit pour 3 soupers par semaine. La version Pro à 4,99$/mois débloque les soupers illimités, les recettes maison et les items récurrents. À l'ouverture, 14 jours de Pro gratuit pour tous, sans carte."}},{"@type":"Question","name":"Comment friyo apprend mes goûts?","acceptedAnswer":{"@type":"Answer","text":"Chaque fois que tu laisses une recette dans ton menu sans la retirer, friyo s'en souvient et la réintroduit plus souvent. Les suggestions s'améliorent chaque semaine."}},{"@type":"Question","name":"Puis-je ajouter mes propres recettes?","acceptedAnswer":{"@type":"Answer","text":"Oui, avec friyo Pro. Tu entres ta recette et ses ingrédients une fois — friyo les mémorise et les ajoute automatiquement à ta liste d'épicerie à chaque fois."}},{"@type":"Question","name":"Est-ce que ça fonctionne avec des restrictions alimentaires?","acceptedAnswer":{"@type":"Answer","text":"Oui. Tu configures tes préférences une fois et friyo les applique à chaque menu généré."}},{"@type":"Question","name":"C'est quoi Vérifier mon frigo?","acceptedAnswer":{"@type":"Answer","text":"Tu indiques à friyo ce que tu as déjà dans ton frigo, et il bâtit ton menu à partir de ces ingrédients en priorité pour éviter le gaspillage."}},{"@type":"Question","name":"Quand est-ce que l'app sera disponible?","acceptedAnswer":{"@type":"Answer","text":"friyo est en version bêta. Inscris-toi à la liste d'attente pour être parmi les premiers à y avoir accès."}}]}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -92,6 +92,12 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 .cta-band h3{font-size:clamp(22px,4vw,32px);font-weight:800;margin-bottom:8px;letter-spacing:-.02em}
 .cta-band>p{color:rgba(250,247,242,.65);max-width:400px;margin:0 auto 28px}
 .cta-band .waitlist-form{margin:0 auto}
+#cta-mid{padding:clamp(56px,8vw,96px) clamp(20px,5vw,56px);background:var(--cream);display:flex;flex-direction:column;align-items:center;text-align:center}
+#cta-mid .waitlist-form{margin:0 auto}
+#cta-mid .form-note{color:rgba(31,58,61,.55)}
+#cta-mid .waitlist-form input[type=email]{background:#fff;border-color:var(--border-cream);color:#1F3A3D}
+#cta-mid .waitlist-form input[type=email]::placeholder{color:rgba(31,58,61,.4)}
+#cta-mid .waitlist-form input[type=email]:focus{border-color:rgba(231,111,81,.6)}
 #comment{padding:clamp(56px,8vw,96px) clamp(20px,5vw,56px)}
 .steps{display:flex;flex-direction:column;gap:12px;margin-top:40px}
 .step{display:flex;align-items:flex-start;gap:20px;background:var(--teal-card);border:1px solid var(--border-teal);border-radius:var(--r);padding:24px}
@@ -310,6 +316,14 @@ footer{background:var(--teal-card);border-top:1px solid var(--border-teal);paddi
   </div>
 </section>
 
+<section id="cta-mid" aria-label="Rejoindre la liste d'attente">
+  <form class="waitlist-form" action="https://formsubmit.co/info@friyo.app" method="POST" aria-label="Formulaire liste d'attente">
+    <input type="hidden" name="_subject" value="Nouvelle inscription liste d'attente — friyo"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_next" value="https://friyo.app"><input type="email" name="email" placeholder="ton@courriel.com" required aria-label="Adresse courriel" data-fr-ph="ton@courriel.com" data-en-ph="your@email.com">
+    <button type="submit" class="btn btn-cta" data-fr="Rejoindre la liste d'attente" data-en="Join the waitlist">Rejoindre la liste d'attente</button>
+    <p class="form-note" data-fr="14 jours de Pro gratuit à l'ouverture · Aucune carte requise" data-en="14 days of Pro free at launch · No credit card required">14 jours de Pro gratuit à l'ouverture · Aucune carte requise</p>
+  </form>
+</section>
+
 
 
 <section id="screenshots" aria-labelledby="screens-h2">
@@ -371,9 +385,9 @@ footer{background:var(--teal-card);border-top:1px solid var(--border-teal);paddi
         <div class="price-period" data-fr="pour toujours" data-en="forever">pour toujours</div>
         <div class="price-divider"></div>
         <ul class="price-features">
-          <li data-fr="3 menus par semaine" data-en="3 menus per week">3 menus par semaine</li>
+          <li data-fr="3 soupers par semaine" data-en="3 dinners per week">3 soupers par semaine</li>
           <li data-fr="Liste d'épicerie automatique" data-en="Automatic grocery list">Liste d'épicerie automatique</li>
-          <li data-fr="Préférences alimentaires" data-en="Dietary preferences">Préférences alimentaires</li>
+          <li data-fr="Préférences : sans gluten et sans lactose" data-en="Preferences: gluten-free &amp; lactose-free">Préférences : sans gluten et sans lactose</li>
           <li data-fr="Vérifier mon frigo" data-en="Check my fridge">Vérifier mon frigo</li>
         </ul>
         
@@ -384,9 +398,9 @@ footer{background:var(--teal-card);border-top:1px solid var(--border-teal);paddi
         <div class="price-period" data-fr="CAD / mois · ou 39,99 $ / an (économise 33 %)" data-en="CAD / month · or $39.99 / year (save 33%)">CAD / mois · ou 39,99 $ / an (économise 33 %)</div>
         <div class="price-divider" style="background:rgba(231,111,81,.25)"></div>
         <ul class="price-features">
-          <li data-fr="Menus illimités" data-en="Unlimited menus">Menus illimités</li>
+          <li data-fr="Soupers illimités" data-en="Unlimited dinners">Soupers illimités</li>
           <li data-fr="Liste d'épicerie automatique" data-en="Automatic grocery list">Liste d'épicerie automatique</li>
-          <li data-fr="Préférences alimentaires" data-en="Dietary preferences">Préférences alimentaires</li>
+          <li data-fr="6 préférences alimentaires (végétarien, végétalien, pescétarien, flexitarien, sans gluten, sans lactose)" data-en="6 dietary preferences (vegetarian, vegan, pescatarian, flexitarian, gluten-free, lactose-free)">6 préférences alimentaires (végétarien, végétalien, pescétarien, flexitarien, sans gluten, sans lactose)</li>
           <li data-fr="Vérifier mon frigo" data-en="Check my fridge">Vérifier mon frigo</li>
           <li class="pro-only" data-fr="✦ Recettes maison (ingrédients auto)" data-en="✦ Personal recipes (auto-ingredients)">✦ Recettes maison (ingrédients auto)</li>
           <li class="pro-only" data-fr="✦ Items récurrents automatiques" data-en="✦ Automatic recurring items">✦ Items récurrents automatiques</li>
@@ -404,7 +418,7 @@ footer{background:var(--teal-card);border-top:1px solid var(--border-teal);paddi
     <p class="eyebrow" data-fr="Questions fréquentes" data-en="FAQ">Questions fréquentes</p>
     <h2 class="section-title" id="faq-h2" data-fr="On répond à tout." data-en="We answer everything.">On répond à tout.</h2>
     <div class="faq-list">
-      <details><summary data-fr="Est-ce que friyo est gratuit?" data-en="Is friyo free?">Est-ce que friyo est gratuit?</summary><div class="faq-body" data-fr="Oui. friyo est gratuit pour les fonctions de base (3 menus/semaine). La version Pro à 4,99 $/mois débloque les menus illimités, les recettes maison et les items récurrents automatiques. À l'ouverture, tout le monde bénéficie de 14 jours de Pro gratuit — sans carte." data-en="Yes. friyo is free for basic features (3 menus/month). Pro at $4.99/month unlocks unlimited menus, personal recipes and automatic recurring items. At launch, everyone gets 14 days of Pro free — no credit card.">Oui. friyo est gratuit pour les fonctions de base (3 menus/semaine). La version Pro à 4,99 $/mois débloque les menus illimités, les recettes maison et les items récurrents automatiques. À l'ouverture, tout le monde bénéficie de 14 jours de Pro gratuit — sans carte.</div></details>
+      <details><summary data-fr="Est-ce que friyo est gratuit?" data-en="Is friyo free?">Est-ce que friyo est gratuit?</summary><div class="faq-body" data-fr="Oui. friyo est gratuit pour les fonctions de base (3 soupers par semaine). La version Pro à 4,99 $/mois débloque les soupers illimités, les recettes maison et les items récurrents automatiques. À l'ouverture, tout le monde bénéficie de 14 jours de Pro gratuit — sans carte." data-en="Yes. friyo is free for basic features (3 dinners per week). Pro at $4.99/month unlocks unlimited dinners, personal recipes and automatic recurring items. At launch, everyone gets 14 days of Pro free — no credit card.">Oui. friyo est gratuit pour les fonctions de base (3 soupers par semaine). La version Pro à 4,99 $/mois débloque les soupers illimités, les recettes maison et les items récurrents automatiques. À l'ouverture, tout le monde bénéficie de 14 jours de Pro gratuit — sans carte.</div></details>
       <details><summary data-fr="Comment friyo apprend mes goûts?" data-en="How does friyo learn my tastes?">Comment friyo apprend mes goûts?</summary><div class="faq-body" data-fr="Chaque fois que tu laisses une recette dans ton menu sans la retirer, friyo s'en souvient et la réintroduit plus souvent. Au fil des semaines, les suggestions deviennent de plus en plus précises — sans que tu aies rien à faire." data-en="Every time you leave a recipe in your menu without removing it, friyo remembers and brings it back more often. Over the weeks, suggestions become more and more accurate — without you doing anything.">Chaque fois que tu laisses une recette dans ton menu sans la retirer, friyo s'en souvient et la réintroduit plus souvent. Au fil des semaines, les suggestions deviennent de plus en plus précises — sans que tu aies rien à faire.</div></details>
       <details><summary data-fr="Puis-je ajouter mes propres recettes?" data-en="Can I add my own recipes?">Puis-je ajouter mes propres recettes?</summary><div class="faq-body" data-fr="Oui, avec friyo Pro. Tu entres ta recette et ses ingrédients une fois — friyo les mémorise et les ajoute automatiquement à ta liste d'épicerie chaque fois qu'elle apparaît dans ton menu." data-en="Yes, with friyo Pro. You enter your recipe once — ingredients are automatically added to your grocery list every time it appears in your menu.">Oui, avec friyo Pro. Tu entres ta recette et ses ingrédients une fois — friyo les mémorise et les ajoute automatiquement à ta liste d'épicerie chaque fois qu'elle apparaît dans ton menu.</div></details>
       <details><summary data-fr="Est-ce que ça fonctionne avec des restrictions alimentaires?" data-en="Does it work with dietary restrictions?">Est-ce que ça fonctionne avec des restrictions alimentaires?</summary><div class="faq-body" data-fr="Oui. Tu configures tes préférences une fois (végétarien, sans gluten, pescétarien, sans lactose…) et friyo les applique à chaque menu généré, sans exception." data-en="Yes. You configure your preferences once (vegetarian, gluten-free, pescatarian, lactose-free…) and friyo applies them to every generated menu, without exception.">Oui. Tu configures tes préférences une fois (végétarien, sans gluten, pescétarien, sans lactose…) et friyo les applique à chaque menu généré, sans exception.</div></details>
@@ -491,7 +505,7 @@ function friyoTrackFaqOpened(question){
 }
 
 document.querySelectorAll('.waitlist-form').forEach(function(form, i){
-  var location = i===0 ? 'hero' : 'footer';
+  var location = ['hero','mid','footer'][i] || 'footer';
   var input = form.querySelector('input[type=email]');
   var focused=false;
   if(input){
